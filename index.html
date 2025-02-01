@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liver Cirrhosis Stage Prediction</title>
+</head>
+<body>
+    <h1>Liver Cirrhosis Stage Prediction</h1>
+    <form action="/predict" method="POST">
+        <label for="age">Age:</label>
+        <input type="text" name="age" id="age" required><br><br>
+        
+        <label for="n_days">Number of days observed (n_days):</label>
+        <input type="text" name="n_days" id="n_days" required><br><br>
+
+        <label for="sex">Sex (M/F):</label>
+        <input type="text" name="sex" id="sex" required><br><br>
+
+        <label for="ascites">Ascites (Y/N):</label>
+        <input type="text" name="ascites" id="ascites" required><br><br>
+
+        <label for="hepatomegaly">Hepatomegaly (Y/N):</label>
+        <input type="text" name="hepatomegaly" id="hepatomegaly" required><br><br>
+
+        <label for="spiders">Spiders (Y/N):</label>
+        <input type="text" name="spiders" id="spiders" required><br><br>
+
+        <label for="edema">Edema (Y/N):</label>
+        <input type="text" name="edema" id="edema" required><br><br>
+
+        <label for="bilirubin">Bilirubin:</label>
+        <input type="text" name="bilirubin" id="bilirubin" required><br><br>
+
+        <label for="cholesterol">Cholesterol:</label>
+        <input type="text" name="cholesterol" id="cholesterol" required><br><br>
+
+        <label for="albumin">Albumin:</label>
+        <input type="text" name="albumin" id="albumin" required><br><br>
+
+        <label for="copper">Copper:</label>
+        <input type="text" name="copper" id="copper" required><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if prediction_text %}
+    <h2>{{ prediction_text }}</h2>
+    {% endif %}  <!-- This closes the if block properly -->
+</body>
+</html>
