@@ -80,7 +80,6 @@ This project is licensed under the MIT License.
 
 ---
 
-Let me know if you need modifications!
 
 This project aims to assist medical profess\
 ionals in predicting the progression of liver cirrhosis using advanced machine learning techniques. By leveraging patient data, it can provide insights into disease stages, helping doctors make informed decisions. The application features an interactive web-based tool for real-time predictions, backed by a robust Flask-based backend. The predictive models have been trained on a comprehensive dataset, ensuring accuracy and reliability. Additionally, techniques such as SMOTE are employed to address class imbalance, improving model performance.
